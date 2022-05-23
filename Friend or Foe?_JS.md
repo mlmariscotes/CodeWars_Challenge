@@ -43,14 +43,17 @@ describe("Basic tests", () => {
 ```
 ---
 #### `Top 3 Solution`
+`Solution 1`
 ```JavaScript
 function friend(friends){
   return friends.filter(n => n.length === 4)
 }
 ```
+`Solution 2`
 ```JavaScript
 const friend = friends => friends.filter(friend => friend.length == 4);
 ```
+`Solution 3`
 ```JavaScript
 function friend(friends){
   
