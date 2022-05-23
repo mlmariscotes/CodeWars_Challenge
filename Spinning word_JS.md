@@ -39,6 +39,7 @@ describe("Spinning words",()=>{
 ```
 ---
 #### `Top 3 Solution`
+`Solution 1`
 ```JavaScript
 function spinWords(words){
   return words.split(' ').map(function (word) {
@@ -46,13 +47,13 @@ function spinWords(words){
   }).join(' ');
 }
 ```
-
+`Solution 2`
 ```JavaScript
 function spinWords(string){
   return string.replace(/\w{5,}/g, function(w) { return w.split('').reverse().join('') })
 }
 ```
-
+`Solution 3`
 ```JavaScript
 function spinWords(str){
   return str.split(' ').map( w => w.length<5 ? w : w.split('').reverse().join('') ).join(' ');
