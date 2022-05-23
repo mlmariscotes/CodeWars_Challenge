@@ -27,7 +27,7 @@ function friend(friends){
 ![image](https://user-images.githubusercontent.com/99033220/169747199-33a3978b-bc08-470c-ac91-e1a63084c084.png)
 
 #### `Sample Test`
-```JavaScirpt
+```JavaScript
 const chai = require("chai");
 const assert = chai.assert;
 chai.config.truncateThreshold=0;
