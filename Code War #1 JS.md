@@ -15,7 +15,8 @@ function spinWords(string){
 console.log(spinWords("Hey fellow warriors")); // Output: Hey wollef sroirraw
 ```
 #### `Output`
-![image](https://user-images.githubusercontent.com/99033220/169735128-0b49c38d-99cd-411e-97d5-507e92ca0841.png)
+![image](https://user-images.githubusercontent.com/99033220/169735436-9f671d04-8421-47ea-b198-6fbbcbc1a94c.png)
+
 
 #### `Sample Test`
 ```JavaScript
