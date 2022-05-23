@@ -3,6 +3,7 @@ Write a function that takes in a string of one or more words, and returns the sa
 
 Examples: spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" spinWords( "This is a test") => returns "This is a test" spinWords( "This is another test" )=> returns "This is rehtona test"
 
+---
 #### `My Solution`
 ```JavaScript
 function spinWords(string){
@@ -35,3 +36,26 @@ describe("Spinning words",()=>{
   });
 });
 ```
+---
+#### `Top 3 Solution`
+```JavaScript
+function spinWords(words){
+  return words.split(' ').map(function (word) {
+    return (word.length > 4) ? word.split('').reverse().join('') : word;
+  }).join(' ');
+}
+```
+
+```JavaScript
+function spinWords(string){
+  return string.replace(/\w{5,}/g, function(w) { return w.split('').reverse().join('') })
+}
+```
+
+```JavaScript
+function spinWords(str){
+  return str.split(' ').map( w => w.length<5 ? w : w.split('').reverse().join('') ).join(' ');
+}
+```
+
+
