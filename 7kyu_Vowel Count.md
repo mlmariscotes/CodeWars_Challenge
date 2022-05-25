@@ -38,3 +38,29 @@ For that purpose the **||[]** is used which will return an empty array if the pr
 ![image](https://user-images.githubusercontent.com/99033220/170183674-18161d7c-1205-4d49-b0de-4c76216d5dbf.png)
 
 ---
+#### `Top 3 Solution`
+```JavaScript
+function getCount(str) {
+  return (str.match(/[aeiou]/ig)||[]).length;
+}
+```
+```JavaScript
+function getCount(str) {
+  var vowelsCount = 0;
+  var vowels = ["a","e","i","o","u"];
+  for(var i = 0;i < str.length;i++){
+    for(var j=0;j<vowels.length;j++){
+      if(str[i] === vowels[j]){
+        vowelsCount++;
+      }
+    }
+  }
+  
+  return vowelsCount;
+}
+```
+```JavaScript
+function getCount(str) {
+  return str.replace(/[^aeiou]/gi, '').length;
+}
+```
