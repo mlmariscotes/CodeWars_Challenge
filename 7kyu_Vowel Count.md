@@ -38,7 +38,7 @@ For that purpose the **||[]** is used which will return an empty array if the pr
 ![image](https://user-images.githubusercontent.com/99033220/170183674-18161d7c-1205-4d49-b0de-4c76216d5dbf.png)
 
 ---
-#### `Top 3 Solution`
+#### `Top 4 Solution`
 ```JavaScript
 function getCount(str) {
   return (str.match(/[aeiou]/ig)||[]).length;
@@ -62,5 +62,10 @@ function getCount(str) {
 ```JavaScript
 function getCount(str) {
   return str.replace(/[^aeiou]/gi, '').length;
+}
+```
+```JavaScript
+function getCount(str) {
+ return str.split('').filter(c => "aeiouAEIOU".includes(c)).length;
 }
 ```
