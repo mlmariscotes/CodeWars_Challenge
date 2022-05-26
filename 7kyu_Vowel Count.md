@@ -19,7 +19,7 @@ The problem with this solution is when the input data has no vowels it will retu
 
 ---
 So I did a little bit of googling 😅
-#### `My revised 1st Solution`
+#### `My 2nd Solution`
 ```JavaScript
 function getCount(str) {
    return (str.match(/[aeiou]/ig)||[]).length;
@@ -36,6 +36,21 @@ For that purpose the **||[]** is used which will return an empty array if the pr
 
 #### `Output`
 ![image](https://user-images.githubusercontent.com/99033220/170183674-18161d7c-1205-4d49-b0de-4c76216d5dbf.png)
+
+#### `Revising my 1st Solution`
+```JavaScript
+function getCount(str) {
+  const count = str.match(/[aeiou]/gi);
+
+  /*
+  ".match" property will return null if no matches found.
+  The problem with my 1st solution is that the  property ".length" cant count null values does returning an error.
+  to get around that, I used ".length" property when "null is false" and when "null is true" It will return "0";
+  */
+  return count !== null ? count.length : 0;
+}
+
+```
 
 ---
 #### `Top 4 Solution`
