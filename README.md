@@ -12,7 +12,7 @@ The platform is owned and operated by Qualified, a technology company that provi
 #### 8 Kyu - Zenitsu 
 #### 7 Kyu - Itchigo 
 #### 6 Kyu - Levi Ackerman
-#### 5 Kyu - Zoro 
+#### 5 Kyu - Zoro @ Wano arc
 #### 4 Kyu - ANBU / Special Jonin
 #### 3 Kyu - Hokage sage mode
 #### 2 Kyu - Sage of the 6 Paths
