@@ -10,10 +10,10 @@ The platform is owned and operated by Qualified, a technology company that provi
 ![image](https://user-images.githubusercontent.com/99033220/170620011-982ff804-0a2a-4252-84cc-e30fed6a53d1.png)
 
 #### 8 Kyu - Zenitsu 
-#### 7 Kyu - 
-#### 6 Kyu - 
-#### 5 Kyu - Levi Ackerman
+#### 7 Kyu - Itchigo 
+#### 6 Kyu - Levi Ackerman
+#### 5 Kyu - Zoro 
 #### 4 Kyu - ANBU / Special Jonin
-#### 3 Kyu - Hokage
+#### 3 Kyu - Hokage sage mode
 #### 2 Kyu - Sage of the 6 Paths
 #### 1 Kyu - Ultra Instinct Goku
