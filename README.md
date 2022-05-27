@@ -5,3 +5,15 @@
 The platform is owned and operated by Qualified, a technology company that provides a platform for assessing and training software engineering skills.
 
 - link: https://www.codewars.com/
+
+### `Rankings` Personal Note
+![image](https://user-images.githubusercontent.com/99033220/170620011-982ff804-0a2a-4252-84cc-e30fed6a53d1.png)
+
+#### 8 Kyu - Zenitsu 
+#### 7 Kyu - 
+#### 6 Kyu - 
+#### 5 Kyu - Levi Ackerman
+#### 4 Kyu - ANBU / Special Jonin
+#### 3 Kyu - Hokage
+#### 2 Kyu - Sage of the 6 Paths
+#### 1 Kyu - Ultra Instinct Goku
