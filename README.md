@@ -6,7 +6,7 @@ The platform is owned and operated by Qualified, a technology company that provi
 
 - link: https://www.codewars.com/
 
-### `Rankings` Personal Note
+### `Ranking` Personal Note
 ![image](https://user-images.githubusercontent.com/99033220/170620011-982ff804-0a2a-4252-84cc-e30fed6a53d1.png)
 
 #### 8 Kyu - Zenitsu 
