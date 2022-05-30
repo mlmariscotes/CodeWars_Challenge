@@ -51,6 +51,7 @@ function isNarcissistic(n) {
 }
 ```
 #### `Test Result`
+![image](https://user-images.githubusercontent.com/99033220/170912266-81f5e7b0-76c9-4a16-8bcb-7f7d72885117.png)
 
 
 ---
