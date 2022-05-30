@@ -6,6 +6,7 @@ A Narcissistic Number is a number of length l in which the sum of its digits to 
 
 Write a function that, given n, returns whether or not n is a Narcissistic Number.
 
+---
 #### `My Solution`
 ```JavaScript
 function isNarcissistic(n) {
@@ -48,14 +49,35 @@ function isNarcissistic(n) {
     //  console.log(sum);
     
 }
-
-
-    
-    
-
-
 ```
+#### `Test Result`
 
+
+---
+#### `Top 3 Solution`
+`Solution 1`
 ```JavaScript
-
+function isNarcissistic(n) {
+  return n === n.toString().split('').reduce((res, num, index, arr) => res += Math.pow(num, arr.length), 0)
+}
+```
+`Solution 2`
+```JavaScript
+function isNarcissistic(n){
+  return n === +n.toString().split('').reduce((s, v, i, arr) => s + Math.pow(v, arr.length),0)
+}
+```
+`Solution 3`
+```JavaScript
+function isNarcissistic(n) {
+  const exp = Math.floor(Math.log10(n) + 1);
+  let sum = 0;
+  
+  for (let i = 0; i < exp; i++) {
+    let digit = Math.floor(n / Math.pow(10, i)) % 10;
+    sum += Math.pow(digit, exp);
+  }
+  
+  return sum === n;
+}
 ```
