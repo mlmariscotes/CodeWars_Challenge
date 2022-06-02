@@ -23,7 +23,9 @@ Given a principal p, interest rate r, and a number of periods n, return an array
 function interest(P,r,n) {
 //  let totalInt = [];
 
-  return [Math.round(P * r * n + P), Math.round(P * Math.pow(1+r,n))];
+//  return [Math.round(P * r * n + P), Math.round(P * Math.pow(1+r,n))];
+    return [P * r * n + P, P * Math.pow(1+r,n)].map(Math.round);
+  
   
 //   // Simple interest  
 //   let simple = Math.round(P * r * n + P); // Change to array
@@ -36,3 +38,28 @@ function interest(P,r,n) {
 //   return totalInt;
 }
 ```
+#### `Test Result`
+![image](https://user-images.githubusercontent.com/99033220/171547949-6c5ec3e4-dced-43cc-9e75-c7f5f671da50.png)
+
+---
+#### `Top 3 Solution`
+
+`Solution 1`
+```JavaScript
+function interest($, r, n) {
+  const dif = (x, y, z) => z > 0 ? dif(x + x*y, y, z-1) : Math.round(x);
+  return [Math.round($ + $*r*n), dif($, r, n)]
+}
+```
+
+`Solution 2`
+```JavaScript
+function interest(P,r,n) {
+  return [P*(1 + r*n), P*Math.pow(1+r, n)].map(Math.round)
+}
+```
+`Solution 3`
+```JavaScript
+let interest = (P, r, n) => [P * (1 + r * n), P * Math.pow(1 + r, n)].map(Math.round);
+```
+
