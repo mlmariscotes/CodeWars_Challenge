@@ -15,3 +15,24 @@ Given a principal p, interest rate r, and a number of periods n, return an array
 **Examples**
 
 ![image](https://user-images.githubusercontent.com/99033220/171547415-a5e5f376-7321-4b56-9188-a85088822152.png)
+
+---
+#### `My Solution`
+
+```JavaScript
+function interest(P,r,n) {
+//  let totalInt = [];
+
+  return [Math.round(P * r * n + P), Math.round(P * Math.pow(1+r,n))];
+  
+//   // Simple interest  
+//   let simple = Math.round(P * r * n + P); // Change to array
+//   totalInt.push(simple);
+
+//   // Compound
+//   let compound = Math.round(P * Math.pow(1+r,n));
+//   totalInt.push(compound);
+
+//   return totalInt;
+}
+```
