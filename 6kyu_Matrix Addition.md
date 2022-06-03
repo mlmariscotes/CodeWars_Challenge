@@ -51,3 +51,35 @@ function matrixAddition(a, b){
 #### `Test Result 2`
 ![image](https://user-images.githubusercontent.com/99033220/171771874-ec8b6cbf-a1e9-4a92-9319-86585d5cb3de.png)
 
+---
+#### `Top 3 Solution`
+`Solution 1`
+```JavaScript
+function matrixAddition(a, b){
+  return a.map(function(n, i){
+    return n.map(function(o, j){
+      return o + b[i][j];
+    });
+  });
+}
+```
+
+`Solution 2`
+```JavaScript
+function matrixAddition(a, b){
+  return a.map(function(row, i) {
+    return row.map(function(col, ii) {
+      return col + b[i][ii];
+    });
+  });
+}
+```
+
+`Solution 3`
+```JavaScript
+function matrixAddition(a, b){
+  return a.map((a,i)=>a.map((a,j)=>a+b[i][j]))
+}
+```
+
+
