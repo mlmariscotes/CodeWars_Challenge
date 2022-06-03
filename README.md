@@ -4,10 +4,14 @@
 
 The platform is owned and operated by Qualified, a technology company that provides a platform for assessing and training software engineering skills.
 
-- link: https://www.codewars.com/
+<img src="https://www.codewars.com/users/mlmariscotes/badges/large" alt="My Rank">
 
 ### `Ranking`
 ![image](https://user-images.githubusercontent.com/99033220/170620011-982ff804-0a2a-4252-84cc-e30fed6a53d1.png)
+
+
+
+
 
 #### 8 Kyu - Zenitsu 
 #### 7 Kyu - Itchigo 
