@@ -11,14 +11,15 @@ Random tests go up to `n = 500000.`
 #### `My Solution`
 ```JavaScript
 function getDivisorsCnt(n){
-  let div = 0;
+  let arr = [];
   
-  for (let i = 1; i <= n+1; i++) {
-    if (n % i == 0) {
-     div += 1
-    }
- }   
-    return div;
+  for (let i = 1; i < n+1; i++) {
+    let rem = n % i;
+    if(rem === 0) {
+      arr.push(i)
+    } 
+  }
+  return arr.length;
 }
 ```
 #### `Test Result`
