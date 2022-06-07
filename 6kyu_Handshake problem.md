@@ -15,7 +15,7 @@ function getParticipants(handshakes){
   const hs = handshakes;
   
   if (hs !== 0) {
-    const x = Math.ceil((1+Math.pow(1+8*hs,0.5))/2); // Quadratic Equation form x2-x = 0
+    const x = Math.ceil((1+Math.pow(1+8*hs,0.5))/2); // Quadratic Equation form x^2-x = 0
     return x;
   } else
     return 0;
