@@ -17,6 +17,7 @@ function squareOrSquareRoot(array) {
   return newArr;
 }
 ```
+#### `Test Result`
 ![image](https://user-images.githubusercontent.com/99033220/172610341-dce81a93-6c16-40e0-a96b-d3fda7ee9d32.png)
 
 
