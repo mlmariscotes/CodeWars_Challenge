@@ -5,6 +5,7 @@ Given a string, you have to return a string in which each character (case-sensit
 ![image](https://user-images.githubusercontent.com/99033220/172078601-d25f8300-f055-4a18-9494-f7a692087894.png)
 
 ---
+
 #### `My Solution`
 ```JavaScript
 function doubleChar(str) {
