@@ -1,6 +1,7 @@
 ## To square(root) or not to square(root)
 
 ![image](https://user-images.githubusercontent.com/99033220/172610114-e1ec79a7-71b3-43f8-a9a1-632ade237e36.png)
+
 ---
 #### `My Solution`
 ```JavaScript
