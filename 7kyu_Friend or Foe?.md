@@ -22,7 +22,6 @@ function friend(friends){
   return myFriends;
 }
 ```
-
 #### `Output`
 ![image](https://user-images.githubusercontent.com/99033220/169747199-33a3978b-bc08-470c-ac91-e1a63084c084.png)
 
