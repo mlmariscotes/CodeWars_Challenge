@@ -5,10 +5,8 @@
 #### `My Solution`
 ```JavaScript
 function sayHello( name, city, state ) {
-  const x = name.toString();
-  const y = x.replace(/,/g, " ");
-   
-  return `Hello, ${y}! Welcome to ${city}, ${state}!`
+  const x = name.join(" ");
+  return `Hello, ${x}! Welcome to ${city}, ${state}!`; 
 }
 ```
 ---
