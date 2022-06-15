@@ -5,6 +5,7 @@
 ---
 #### `My Solution`
 ```JavaScript
+// 1st Solution
 function squareOrSquareRoot(array) {
   let newArr = [];
   for (let i = 0; i < array.length; i++) {
@@ -16,6 +17,19 @@ function squareOrSquareRoot(array) {
     }
   }
   return newArr;
+}
+
+// 2nd Solution
+function squareOrSquareRoot(array) {
+  let arr = [];
+  
+  array.forEach((elem, index) => {
+    let num = Math.sqrt(elem) % 1 === 0; // if no remainder True, 
+    if (num == true) arr.push(Math.sqrt(elem));
+    if (num == false) arr.push(Math.pow(elem, 2))
+  })
+  
+  return arr;
 }
 ```
 #### `Test Result`
