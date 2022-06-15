@@ -30,7 +30,7 @@ function deleteDigit(n) {
     return max;
 }
 ```
-#### `Test Resul`
+#### `Test Result`
 ![image](https://user-images.githubusercontent.com/99033220/172304647-b44b27b8-4617-462b-af3f-9876a6c0ac61.png)
 
 ---
