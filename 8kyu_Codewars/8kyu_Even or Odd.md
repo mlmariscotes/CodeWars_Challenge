@@ -5,7 +5,7 @@ Create a function that takes an integer as an argument and returns "Even" for ev
 ---
 
 #### `My Solution`
-```JavaSript
+```JavaScript
 function even_or_odd(number) {
     return (number % 2 == 0) ? "Even" : "Odd";
 }
@@ -13,7 +13,7 @@ function even_or_odd(number) {
 ---
 
 #### `Test Data`
-```JavaSript
+```JavaScript
 const chai = require('chai');
 const assert = chai.assert;
 
