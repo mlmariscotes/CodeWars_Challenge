@@ -20,3 +20,27 @@ function accum(s) {
     return arr.join("-")
 }
 ```
+---
+#### `Top 3 Solution`
+```JavaScript
+// Solution 1
+function accum(s) {
+  return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+}
+
+// Solution 2
+function accum(s) {
+  return s.split('').map((x,index) => x.toUpperCase()+Array(index+1).join(x.toLowerCase())).join('-');
+}
+
+// Solution 3
+function accum(str) {
+  var letters = str.split('');
+  var result = [];
+  for (var i = 0; i < letters.length; i++) {
+    result.push(letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase()));
+  }
+  return result.join('-');
+}
+
+```
