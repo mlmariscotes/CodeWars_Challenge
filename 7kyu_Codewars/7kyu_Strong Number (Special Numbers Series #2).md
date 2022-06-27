@@ -29,6 +29,22 @@ function strong(n) {
   return (value === n) ? "STRONG!!!!" : "Not Strong !!";
  
 };
+
+// Refactoring 1st Solution
+function strong(n) {
+  const arr = n.toString().split("").map(Number);
+  
+  // Factorial Function
+  function factorial(num) {
+    if(num == 0 || num == 1) {
+      return 1;
+    } else {
+      return num * factorial(num - 1);
+    };
+  };
+  
+    return arr.map((elem) => factorial(elem)).reduce((acc, curr) => acc + curr, 0) === n ? "STRONG!!!!" : "Not Strong !!" ;
+};
 ```
 ---
 ```JavaScript
@@ -61,7 +77,6 @@ function strong(n) {
 }
 
 // Solution 3
-// fun task really fun, thanrs 
 function strong(n, num = [...`${n}`]) {
   const fuc = x => Array(x).fill(0).reduce((a, _, i) => a * (i + 1), 1)
   return num.map(el => fuc(+el)).reduce((a,b)=> a+b,0) === n ? "STRONG!!!!" : "Not Strong !!" ;
