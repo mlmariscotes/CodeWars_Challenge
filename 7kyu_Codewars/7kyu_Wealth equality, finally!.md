@@ -13,7 +13,7 @@ function redistributeWealth(wealth) {
 ```
 ---
 ```JavaScript
-// TOP 3 SOLUTION
+// TOP 4 SOLUTION
 // Solution 1
 const redistributeWealth=(w,v=w.reduce((a,b)=>a+b,0)/w.length)=>w.fill(v)
 
@@ -40,5 +40,20 @@ function redistributeWealth(wealth) {
   
   return wealth.fill(total/wealth.length);
 }
+
+// Solution 4
+function redistributeWealth(wealth) {
+  wealth = wealth.fill((wealth.reduce(function(a, b) {
+    return a + b;})) / wealth.length);
+}
+
+// first we reduced the wealth array to one value
+// that equals the total wealth among all citizens
+// and then we divided it by the length of the
+// array, which is the number of citizens, to get
+// the average amount -- the amount we can equally
+// distribute to everyone. Then we fill the wealth
+// array with that value.
+
 
 ```
