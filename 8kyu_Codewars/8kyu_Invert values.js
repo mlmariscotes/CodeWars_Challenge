@@ -9,5 +9,5 @@ You can assume that all values are integers.
 */
 
 function invert(array) {
-   return array.map( x => x === 0 ? x : -x);
+  return array.map(val => val * -1);
 }
